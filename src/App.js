@@ -22,7 +22,7 @@ function App() {
 
     const deleteItem = (id) => {
         const updatedItem = Items.filter((elem, index) => {
-            return id != index;
+            return id !== index;
         });
         setItems(updatedItem);
     };
